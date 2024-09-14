@@ -104,6 +104,8 @@ $("#test").bsSuggest('init', {
     console.log('onShowDropdown', e.target.value, data);
 }).on('onHideDropdown', function (e, data) {
     console.log('onHideDropdown', e.target.value, data);
+}).on('onClear', function () {
+    console.log('onClear');
 });
 ```
 更多详细用法，可参考 [demo/index.html](https://github.com/lzwme/bootstrap-suggest-plugin/blob/master/demo/index.html) 和 [demo/demo.js](https://github.com/lzwme/bootstrap-suggest-plugin/blob/master/demo/demo.js) 文件源代码，提供了自定义数据、URL 请求数据、百度搜索 API、淘宝搜索 API 的接口演示。
