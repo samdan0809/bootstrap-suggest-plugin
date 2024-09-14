@@ -1085,6 +1085,7 @@
           $iClear.click(function() {
             setOrGetDataId($input, "").val("");
             setBackground($input, options);
+            $input.trigger('onClear');
           });
 
           $parent
